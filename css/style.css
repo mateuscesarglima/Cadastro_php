@@ -1,0 +1,126 @@
+*{
+    /* RESET */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none; 
+}
+
+input , label {
+    
+    display: block; /* FICAR UM EMBAIXO DO OUTRO */
+   
+    width: 100%;  /* LARGURA */
+}
+
+
+input:focus , label:focus{ /* AO CLICAR NOS INPUTS/LABEL */
+   
+    outline: none;  /* TIRAR A BORDA AO CLICAR */
+}
+
+
+a{  /* COR DOS LINKS */
+    color: #E60084; 
+}
+
+body{
+    padding-top: 5vh; /* 5% da tela */
+    background-image: url("../img/bg-register-page.jpg"); /*IMAGEM DE FUNDO */
+    background-size: cover; 
+    background-position-y: -150px;
+}
+
+/* FORM */
+
+#main-container{
+
+    width: 500px; /* LARGURA DO CONTAINER DE LOGIN */
+
+    /* CENTRALIZAÇÃO DO CONTAINER */
+    margin-left: auto; 
+    margin-right: auto;
+
+    padding: 25px; /*ESPAÇAMENTO INTERNO */
+    background-color: #FFF; /*COR DE FUNDO */
+    border-radius: 10px; /* CURVAMENTO DA BORDA */
+
+}
+#main-container h1{
+
+    text-align: center; 
+    margin-bottom: 25px; 
+    font-size: 1.6rem;
+    
+}
+
+form{
+    display: flex; /* FLEX BOX*/
+    flex-wrap: wrap; /* CONSEGUIR ALINHAR OS ELEMENTOS*/
+    justify-content: space-between; /* DAR ESPAÇAMENTO DOS INPUT */
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+}
+
+#msg{
+    text-align: center;
+    background-color: greenyellow;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 9px;
+}
+
+input:focus {
+
+    border-color: #E60084; /* COR AO CLICAR NO INPUT */
+    transition: .5s; /* TRANSIÇÃO PARA A COR APARECER */
+
+}
+
+label{
+    font-weight: bold; /* NEGRITO */
+    font-size: .8rem;
+}
+
+input[type="submit"] {
+    background-color: #E60084;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+}
+input[type="submit"]:hover{
+    background-color: #007bb4;
+    transition: .5s;
+    cursor: pointer;
+}
+#agreements{
+    margin-right: 5px;
+}
+
+#agreements , #agreements-label{
+    display: inline-block;
+    width: auto;
+}
+
+
+
